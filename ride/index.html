@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hey, it's Chirag</title>
+<style>
+  :root{
+    --bg:#f6f1e7;
+    --ink:#221f1a;
+    --soft:#6f6657;
+    --card:#fffdf8;
+    --line:#e7ddca;
+    --accent:#c9612f;
+    --accent-ink:#9c4a22;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    padding:34px 22px 50px;
+    max-width:540px;
+    margin:0 auto;
+  }
+  .hi{font-size:15px;color:var(--accent-ink);font-weight:600;letter-spacing:.3px;}
+  h1{font-size:29px;font-weight:800;line-height:1.2;margin:8px 0 16px;letter-spacing:-.5px;}
+  .lede{font-size:16.5px;color:#3a352d;}
+  .lede b{font-weight:700;}
+
+  .rule{height:1px;background:var(--line);margin:30px 0;}
+
+  .label{
+    font-size:12px;text-transform:uppercase;letter-spacing:1.6px;
+    color:var(--soft);margin-bottom:14px;font-weight:700;
+  }
+
+  .hooks{display:flex;flex-direction:column;gap:12px;}
+  .hook{font-size:16px;color:#3a352d;display:flex;gap:12px;align-items:flex-start;}
+  .hook .e{font-size:19px;line-height:1.4;}
+  .hook b{color:var(--accent-ink);font-weight:700;}
+
+  .fit{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:20px 20px 8px;
+  }
+  .fit p.intro{font-size:16px;color:#3a352d;margin-bottom:14px;}
+  .fit p.intro b{color:var(--ink);}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:14px;}
+  .chip{
+    background:#fbf4e6;border:1px solid var(--line);border-radius:999px;
+    padding:8px 14px;font-size:14px;color:#544c3e;font-weight:600;
+  }
+  .ask-box{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:20px;
+  }
+  .ask-box .q{font-size:18px;font-weight:800;letter-spacing:-.2px;margin-bottom:6px;}
+  .ask-box .hint{font-size:14.5px;color:var(--soft);margin-bottom:14px;}
+  .ask-box textarea{
+    width:100%;min-height:96px;resize:vertical;
+    background:#fbf4e6;border:1px solid var(--line);border-radius:12px;
+    padding:13px 14px;font-size:16px;color:var(--ink);
+    font-family:inherit;line-height:1.5;
+  }
+  .ask-box textarea:focus{outline:none;border-color:var(--accent);}
+  .ask-box button{
+    width:100%;margin-top:12px;border:none;cursor:pointer;
+    background:var(--accent);color:#fff;border-radius:12px;
+    padding:15px;font-size:16px;font-weight:700;font-family:inherit;
+  }
+  .ask-box button:active{background:var(--accent-ink);}
+  .ask-box .thanks{
+    display:none;text-align:center;color:var(--accent-ink);
+    font-size:15px;font-weight:600;margin-top:14px;
+  }
+
+  .links{display:flex;flex-direction:column;gap:11px;}
+  a.btn{
+    display:flex;align-items:center;justify-content:space-between;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:15px 18px;text-decoration:none;color:var(--ink);font-size:16px;font-weight:700;
+  }
+  a.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+  a.btn.primary small{color:#ffe9d8;}
+  a.btn .arrow{font-size:18px;color:var(--accent-ink);}
+  a.btn.primary .arrow{color:#fff;}
+  a.btn small{display:block;color:var(--soft);font-size:12.5px;font-weight:400;margin-top:2px;}
+
+  .thought{
+    margin-top:34px;padding:20px 4px 0;border-top:1px solid var(--line);
+    text-align:center;
+  }
+  .thought p{
+    font-size:16px;font-style:italic;color:#4a4438;line-height:1.65;
+    max-width:380px;margin:0 auto;
+  }
+
+  .foot{text-align:center;color:var(--soft);font-size:14px;margin-top:26px;line-height:1.7;}
+  .foot b{color:var(--ink);}
+</style>
+</head>
+<body>
+
+  <div class="hi">your driver, by the way 👋</div>
+  <h1>Hey, I'm Chirag.</h1>
+  <p class="lede">By day I build things — <b>websites, apps, AI tools, the systems that keep a business running.</b> By… well, also by day, I drive. I like that a ride drops me into someone else's world for a few minutes. So — nice to meet you.</p>
+
+  <div class="rule"></div>
+
+  <div class="label">Things I'll happily talk your ear off about</div>
+  <div class="hooks">
+    <div class="hook"><span class="e">🏙️</span><span>The <b>AI tool for architects</b> I'm building — draw a shape on a map, get the whole site analysis back. We got it gloriously wrong twice first.</span></div>
+    <div class="hook"><span class="e">🎮</span><span>A <b>game I made</b> where you win by restoring balance, not by crushing everyone.</span></div>
+    <div class="hook"><span class="e">🤖</span><span>Where <b>AI actually helps</b> vs. where everyone's overpromising — I build with it daily.</span></div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="label">Where I might fit in</div>
+  <div class="fit">
+    <p class="intro">If you — <b>or someone you know</b> — ever need a hand with any of this, keep me in mind:</p>
+    <div class="chips">
+      <span class="chip">A website</span>
+      <span class="chip">An online store</span>
+      <span class="chip">An app or tool</span>
+      <span class="chip">A product idea built (MVP)</span>
+      <span class="chip">Automating boring work</span>
+      <span class="chip">AI features or a chatbot</span>
+      <span class="chip">Organising a business in Notion</span>
+      <span class="chip">Taming messy spreadsheets</span>
+      <span class="chip">Dashboards for your numbers</span>
+      <span class="chip">Pitch decks &amp; demos</span>
+      <span class="chip">Getting your first customers</span>
+      <span class="chip">Smart devices / IoT ideas</span>
+      <span class="chip">Volunteering for a cause 🤝</span>
+      <span class="chip">Figuring out the tech</span>
+      <span class="chip">…even a game 🎮</span>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="label">One question before you go</div>
+  <div class="ask-box">
+    <div class="q">What's one thing you wish someone would just fix? 🔧</div>
+    <div class="hint">Your work, your day, your city — or something totally random. I genuinely collect these. Hit send and it'll reach me.</div>
+    <textarea id="msg" placeholder="Type anything…"></textarea>
+    <button id="send">Send it to Chirag →</button>
+    <div class="thanks" id="thanks">Thank you — got it. 🙏</div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="label">Stay in touch</div>
+  <div class="links">
+    <a class="btn primary" href="https://linktr.ee/chirag_ds">
+      <span>All my stuff in one place<small>Portfolio, work, socials</small></span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="btn" href="https://linkedin.com/in/chiraggds">
+      <span>Connect on LinkedIn<small>Say hi — mention the ride!</small></span>
+      <span class="arrow">→</span>
+    </a>
+    <a class="btn" href="mailto:chiragds0117@gmail.com">
+      <span>Drop me an email<small>For you or someone you know</small></span>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+
+  <div class="thought">
+    <p>We shared a small stretch of road today. I've always felt the smallest things — a few quiet minutes, a kind word — ripple out further than we ever get to see. Hope today's ripple is a good one. 🌱</p>
+  </div>
+
+  <p class="foot">Enjoy the rest of your ride 🙏<br><b>— Chirag</b></p>
+
+  <script>
+    document.getElementById('send').addEventListener('click', function(){
+      var t = document.getElementById('msg').value.trim();
+      if(!t){ document.getElementById('msg').focus(); return; }
+      var subject = "A thought from your ride 🚗";
+      var body = t + "\n\n— sent from your ride card";
+      window.location.href = "mailto:chiragds0117@gmail.com?subject="
+        + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      document.getElementById('thanks').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
